@@ -1,0 +1,9 @@
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\BuisnessTier.dll
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\BuisnessTier.pdb
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.csprojAssemblyReference.cache
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.csproj.CoreCompileInputs.cache
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.dll
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.pdb
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\DataAccessTier.dll
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\DataAccessTier.pdb
+C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.csproj.CopyComplete

@@ -1,0 +1,5 @@
+C:\Users\dania\source\repos\BMSPresentation\DataAccessTier\bin\Debug\DataAccessTier.dll
+C:\Users\dania\source\repos\BMSPresentation\DataAccessTier\bin\Debug\DataAccessTier.pdb
+C:\Users\dania\source\repos\BMSPresentation\DataAccessTier\obj\Debug\DataAccessTier.csproj.CoreCompileInputs.cache
+C:\Users\dania\source\repos\BMSPresentation\DataAccessTier\obj\Debug\DataAccessTier.dll
+C:\Users\dania\source\repos\BMSPresentation\DataAccessTier\obj\Debug\DataAccessTier.pdb
