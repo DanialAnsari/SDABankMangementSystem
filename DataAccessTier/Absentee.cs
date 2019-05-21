@@ -113,7 +113,6 @@ namespace DataAccessTier
 
         public void DeletePerson(int id)
         {
-
             db.insertUpdateDelete("DeletePerson " + id);
         }
     }
