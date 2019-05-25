@@ -19,7 +19,7 @@ namespace DataAccessTier
 
         public DatabaseHelper()
         {
-            string connectionString = "Data Source=LAPTOP-N3NU3IOC\\MSSQLSERVER14;Initial Catalog=SDA_BANK_MANAGEMENT_DATABASE;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-3PLMV60;Initial Catalog=SDA_BANK_MANAGEMENT_DATABASE;Integrated Security=True";
             conn = new SqlConnection(connectionString);
         }
 
