@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\SDA_BANK_MANAGEMENT_DATABASE.mdf" />
+    <Content Include="DB\SDA_BANK_MANAGEMENT_DATABASE_log.ldf">
+      <DependentUpon>SDA_BANK_MANAGEMENT_DATABASE.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
