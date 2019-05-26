@@ -9,37 +9,229 @@ namespace DataAccessTier
 {
     class Absentee
     {
+        DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectAbsentee");
+
+            return dt;
+
+        }
+
     }
 
-    class Account { }
+    class Account {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
 
-    class BankTransaction { }
+        public DataTable SelectRecords()
+        {
 
-    class City { }
+            dt = db.Select("SelectAccount");
 
-    class Customer { }
+            return dt;
 
-    class Desgination { }
+        } 
+}
 
-    class Education { }
+    class BankTransaction { 
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
 
-    class Employee { }
+        public DataTable SelectRecords()
+        {
 
-    class Loan { }
+            dt = db.Select("SelectTransaction");
 
-    class LoanInstallment { }
+            return dt;
 
-    class LoanPurpose { }
+        }
+}
 
-    class LoanType { }
+    class City {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
 
-    class Locker { }
+        public DataTable SelectRecords()
+        {
 
-    class LockerPossesion { }
+            dt = db.Select("SelectCity");
 
-    class LockerPurpose { }
+            return dt;
 
-    class MoneyTransfer { }
+        } 
+}
+
+    class Customer {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectCustomer");
+
+            return dt;
+
+        } 
+}
+
+    class Desgination {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectDesination");
+
+            return dt;
+
+        } 
+}
+
+    class Education {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectEducation");
+
+            return dt;
+
+        } 
+}
+
+    class Employee {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectEmployee");
+
+            return dt;
+
+        } 
+}
+
+    class Loan {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLoan");
+
+            return dt;
+
+        } 
+}
+
+    class LoanInstallment {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLoanInstallment ");
+
+            return dt;
+
+        } 
+}
+
+    class LoanPurpose {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLoanPurpose");
+
+            return dt;
+
+        } 
+}
+
+    class LoanType {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLoanType");
+
+            return dt;
+
+        } 
+}
+
+    class Locker {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLocker");
+
+            return dt;
+
+        } 
+}
+
+    class LockerPossesion {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLockerPossesion");
+
+            return dt;
+
+        } 
+}
+
+    class LockerPurpose { 
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectLockerPurpose");
+
+            return dt;
+
+        }
+}
+
+    class MoneyTransfer {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectMoneyTransfer");
+
+            return dt;
+
+        } 
+}
 
     class Person {
         DatabaseHelper db = new DatabaseHelper();
@@ -118,12 +310,72 @@ namespace DataAccessTier
         }
     }
 
-    class PhoneNumber { }
+    class PhoneNumber {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
 
-    class Policy { }
+        public DataTable SelectRecords()
+        {
 
-    class Repayment { }
-    class Salary { }
+            dt = db.Select("SelectPhoneNumber");
 
-    class TransactionType { }
+            return dt;
+
+        } 
+}
+
+    class Policy {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectPolicy");
+
+            return dt;
+
+        } 
+}
+
+    class Repayment { 
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectRepayment");
+
+            return dt;
+
+        }
+}
+    class Salary {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectSalary");
+
+            return dt;
+
+        } 
+}
+
+    class TransactionType {
+ DatabaseHelper db = new DatabaseHelper();
+        DataTable dt;
+
+        public DataTable SelectRecords()
+        {
+
+            dt = db.Select("SelectTransactionType");
+
+            return dt;
+
+        } 
+}
 }
