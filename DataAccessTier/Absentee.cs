@@ -20,7 +20,7 @@ namespace DataAccessTier
             return dt;
 
         }
-        public DataTable SelectRecordswithName(string name)
+           public DataTable SelectRecordswithName(string name)
         {
 
             dt = db.Select("SelectAbsenteeNameFromID  '" + name + "'");
@@ -41,7 +41,7 @@ namespace DataAccessTier
         public DataTable SelectRecordswithId(int id)
         {
 
-            dt = db.Select("SelectAllAbsenteeWithID " +id;
+            dt = db.Select("SelectAllAbsenteeWithID " +id);
 
             return dt;
 
@@ -65,6 +65,7 @@ namespace DataAccessTier
             db.insertUpdateDelete("DeleteAbsentee " + id);
         }
     }
+     
 
 
 
@@ -424,5 +425,4 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
 }
