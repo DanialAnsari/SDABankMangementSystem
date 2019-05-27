@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessTier;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -20,6 +21,54 @@ namespace DataAccessTier
             return dt;
 
         }
+           public DataTable SelectRecordswithName(string name)
+        {
+
+            dt = db.Select("SelectAbsenteeNameFromID  '" + name + "'");
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithAllAbsentee(int id)
+        {
+
+            dt = db.Select("SelectAllAbsentee " + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithId(int id)
+        {
+
+            dt = db.Select("SelectAllAbsenteeWithID " +id);
+
+            return dt;
+
+        }
+
+ public void InsertAbsentee( DateTime AbsenteeDate, string AbsenteeDescription)
+        {
+
+            db.insertUpdateDelete("InsertAbsentee '" + AbsenteeDate + "' '" + AbsenteeDescription + "' ");
+        }
+
+        public void UpdateAbsentee(DateTime AbsenteeDate, string AbsenteeDescription)
+        {
+
+            db.insertUpdateDelete("UpdateAbsentee'" + AbsenteeDate + "' '" + AbsenteeDescription + "'" );
+        }
+
+        public void DeleteAbsentee(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteAbsentee " + id);
+        }
+    }
+     
+
+
 
     }
 
@@ -34,7 +83,47 @@ namespace DataAccessTier
 
             return dt;
 
-        } 
+        }
+    public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectAccountwithID  '" + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithPersonID(int id)
+        {
+
+            dt = db.Select("SelectAccountwithPersonID " + id);
+
+            return dt;
+
+        }
+
+         public void InsertAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed )
+        {
+
+            db.insertUpdateDelete("InsertAccount '" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' ");
+        }
+
+        public void UpdateAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed)
+        {
+
+            db.insertUpdateDelete("UpdateAccount'" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' " );
+        }
+
+        public void DeleteAccount(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteAccount " + id);
+        }
+
+
+
+
+
 }
 
     class BankTransaction { 
@@ -336,7 +425,33 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectPolicywithID " +id);
+
+            return dt;
+
+        }
+                      public void InsertPolicy(string PolicyName , float Constant)
+        {
+
+            db.insertUpdateDelete("InsertPolicy'" +PolicyName+ "' '"+Constant+"'  ");
+        }
+
+        public void UpdatePolicy(string PolicyName , float Constant)
+        {
+
+            db.insertUpdateDelete("UpdatePolicy'" +PolicyName+ "' '"+Constant+"'  ");
+        }
+
+        public void DeletePolicy(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeletePolicy" + id);
+        }
+    }
+
 
     class Repayment { 
  DatabaseHelper db = new DatabaseHelper();
@@ -350,7 +465,50 @@ namespace DataAccessTier
             return dt;
 
         }
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectRepaymentwithID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithLoanID(int id)
+        {
+
+            dt = db.Select("SelectRepaymetnwithLoanID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithStatus(string status)
+        {
+
+            dt = db.Select("SelectRepaymetnwithStatus '" +Status+"' ");
+
+            return dt;
+
+        }
+                      public void InsertRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
+        {
+
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+        }
+
+        public void UpdateRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
+        {
+
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+        }
+
+        public void DeleteRepayment(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteRepayment" + id);
+        }
+    }
+
+
     class Salary {
  DatabaseHelper db = new DatabaseHelper();
         DataTable dt;
@@ -377,5 +535,4 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
 }
