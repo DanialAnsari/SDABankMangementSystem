@@ -425,7 +425,33 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectPolicywithID " +id);
+
+            return dt;
+
+        }
+                      public void InsertPolicy(string PolicyName , float Constant)
+        {
+
+            db.insertUpdateDelete("InsertPolicy'" +PolicyName+ "' '"+Constant+"'  ");
+        }
+
+        public void UpdatePolicy(string PolicyName , float Constant)
+        {
+
+            db.insertUpdateDelete("UpdatePolicy'" +PolicyName+ "' '"+Constant+"'  ");
+        }
+
+        public void DeletePolicy(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeletePolicy" + id);
+        }
+    }
+
 
     class Repayment { 
  DatabaseHelper db = new DatabaseHelper();
