@@ -10,6 +10,7 @@ namespace DataAccessTier
 {
     class DatabaseHelper
     {
+
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataAdapter da;
@@ -19,7 +20,8 @@ namespace DataAccessTier
         public DatabaseHelper()
         {
             string connectionString = "Data Source=LAPTOP-N3NU3IOC\\MSSQLSERVER14;Initial Catalog=SDA_BANK_MANAGEMENT_DATABASE;Integrated Security=True";
-            conn = new SqlConnection(connectionString);}
+            conn = new SqlConnection(connectionString);
+        }
 
         public DataTable Select(string q)
         {
@@ -37,7 +39,7 @@ namespace DataAccessTier
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                }
+            }
 
             return null;
         }
@@ -65,6 +67,5 @@ namespace DataAccessTier
             return false;
 
         }
-
     }
 }
