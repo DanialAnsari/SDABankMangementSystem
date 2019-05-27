@@ -105,13 +105,13 @@ namespace DataAccessTier
          public void InsertAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed )
         {
 
-            db.insertUpdateDelete("InsertAccount '" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' ");
+            db.insertUpdateDelete("InsertAccount '" + PersonID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' ");
         }
 
         public void UpdateAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed)
         {
 
-            db.insertUpdateDelete("UpdateAccount'" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' " );
+            db.insertUpdateDelete("UpdateAccount'" + PersonID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' " );
         }
 
         public void DeleteAccount(int id)
@@ -484,7 +484,7 @@ namespace DataAccessTier
         public DataTable SelectRecordswithStatus(string status)
         {
 
-            dt = db.Select("SelectRepaymetnwithStatus '" +Status+"' ");
+            dt = db.Select("SelectRepaymetnwithStatus '" +status+"' ");
 
             return dt;
 
@@ -492,13 +492,13 @@ namespace DataAccessTier
                       public void InsertRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
         {
 
-            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmountPaid+"' '"+PaymentDateTime+"' '"+Status+"'  ");
         }
 
         public void UpdateRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
         {
 
-            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmountPaid+"' '"+PaymentDateTime+"' '"+Status+"'  ");
         }
 
         public void DeleteRepayment(int id)
