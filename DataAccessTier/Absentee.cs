@@ -20,6 +20,53 @@ namespace DataAccessTier
             return dt;
 
         }
+        public DataTable SelectRecordswithName(string name)
+        {
+
+            dt = db.Select("SelectAbsenteeNameFromID  '" + name + "'");
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithAllAbsentee(int id)
+        {
+
+            dt = db.Select("SelectAllAbsentee " + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithId(int id)
+        {
+
+            dt = db.Select("SelectAllAbsenteeWithID " +id;
+
+            return dt;
+
+        }
+
+ public void InsertAbsentee( DateTime AbsenteeDate, string AbsenteeDescription)
+        {
+
+            db.insertUpdateDelete("InsertAbsentee '" + AbsenteeDate + "' '" + AbsenteeDescription + "' ");
+        }
+
+        public void UpdateAbsentee(DateTime AbsenteeDate, string AbsenteeDescription)
+        {
+
+            db.insertUpdateDelete("UpdateAbsentee'" + AbsenteeDate + "' '" + AbsenteeDescription + "'" );
+        }
+
+        public void DeleteAbsentee(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteAbsentee " + id);
+        }
+    }
+
+
 
     }
 
