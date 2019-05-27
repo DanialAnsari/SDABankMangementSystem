@@ -82,7 +82,47 @@ namespace DataAccessTier
 
             return dt;
 
-        } 
+        }
+    public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectAccountwithID  '" + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithPersonID(int id)
+        {
+
+            dt = db.Select("SelectAccountwithPersonID " + id);
+
+            return dt;
+
+        }
+
+         public void InsertAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed )
+        {
+
+            db.insertUpdateDelete("InsertAccount '" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' ");
+        }
+
+        public void UpdateAccount( int PersonID,int AccountNumber,String AccountTitle,int CurrentBalance, DateTime DateOpened,DateTime DateClosed)
+        {
+
+            db.insertUpdateDelete("UpdateAccount'" + PersionID + "' '" + AccountNumber + "' '"+AccountTitle+"''"+CurrentBalance+"''"+DateOpened+"''"+DateClosed+"' " );
+        }
+
+        public void DeleteAccount(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteAccount " + id);
+        }
+
+
+
+
+
 }
 
     class BankTransaction { 
