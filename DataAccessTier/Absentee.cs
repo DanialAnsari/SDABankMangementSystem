@@ -465,7 +465,50 @@ namespace DataAccessTier
             return dt;
 
         }
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectRepaymentwithID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithLoanID(int id)
+        {
+
+            dt = db.Select("SelectRepaymetnwithLoanID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithStatus(string status)
+        {
+
+            dt = db.Select("SelectRepaymetnwithStatus '" +Status+"' ");
+
+            return dt;
+
+        }
+                      public void InsertRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
+        {
+
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+        }
+
+        public void UpdateRepayment(int LoanID ,float AmountPaid ,DateTime PaymentDateTime ,string Status )
+        {
+
+            db.insertUpdateDelete("InsertRepayment'" +LoanID+ "' '"+AmounPaid+"' '"+PaymetnDateTime+"' '"+Status+"'  ");
+        }
+
+        public void DeleteRepayment(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteRepayment" + id);
+        }
+    }
+
+
     class Salary {
  DatabaseHelper db = new DatabaseHelper();
         DataTable dt;
