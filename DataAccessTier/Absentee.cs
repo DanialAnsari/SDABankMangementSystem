@@ -411,7 +411,44 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectPhoneNumberasID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithPerson(string Person)
+        {
+
+            dt = db.Select("SelectPhoneNowithPerson " +Person);
+
+            return dt;
+
+        }
+                public void InsertPhoneNo(string Number , int PersonID)
+        {
+
+            db.insertUpdateDelete("InsertPhoneNo '" +Number+ "' '"+PersonID+"'  ");
+        }
+
+        public void UpdatePhoneNo(string Number , int PersonID)
+        {
+
+            db.insertUpdateDelete("UpdatePhoneNo'" +Number+ "' '"+PersonID+"'  ");
+        }
+
+        public void DeletePhoneNo(int id)
+        {
+            //This method Deletes PhoneNo
+            db.insertUpdateDelete("DeletePhoneNo" + id);
+        }
+    }
+
+
+
+
 
     class Policy {
  DatabaseHelper db = new DatabaseHelper();
