@@ -320,7 +320,49 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectMoneyTransferWithID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithReceiver(string Receiver)
+        {
+
+            dt = db.Select("SelectMoneyTransferWithReceiver " +Receiver);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithSender(string Sender)
+        {
+
+            dt = db.Select("SelectMoneyTransferWithSender " +Sender);
+
+            return dt;
+
+        }
+         public void InsertMoneyTransfer(int ToAccount , int FromAccount)
+        {
+
+            db.insertUpdateDelete("InsertMoneyTransfer '" +ToAccount+ "' '"+FromAccount+"'  ");
+        }
+
+        public void UpdateMoneyTransfer( int ToAccount , int FromAccount)
+        {
+
+            db.insertUpdateDelete("UpdateMoneyTransfer'" + ToAccount + "' '"+FromAccount+"'  ");
+        }
+
+        public void DeleteMoneyTransfer(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteMoneyTransfer" + id);
+        }
+    }
+
 
     class Person {
         DatabaseHelper db = new DatabaseHelper();
