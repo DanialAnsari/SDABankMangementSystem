@@ -278,7 +278,71 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+    public DataTable SelectRecordswithDate(DateTime date)
+        {
+
+            dt = db.Select("SelectLockerWithDate  '" + date + "'");
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLockerWithID " + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithPerson(string person)
+        {
+
+            dt = db.Select("SelectLockerWithPerson '" +person+"' ");
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithPurpose(string purpose)
+        {
+
+            dt = db.Select("SelectLockerWithPerson '" +purpose+"' ");
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithType(string type)
+        {
+
+            dt = db.Select("SelectLockerWithType '" +type+"' ");
+
+            return dt;
+
+        }
+
+ public void InsertLocker( int LockerPurposeID, int LockerTypeID ,DateTime DateOpened, string LockerContain ,string LockerDiscription ,int Rent , int PersonID)
+        {
+
+            db.insertUpdateDelete("InsertLocker '" + LockerPurposeID + "' '" + LockerTypeID+ "' '"+DateOpened+"' '"+LockerContain+"' '"+LockerDiscription+"' '"+Rent+"' '"+PersonID+"'");
+        }
+
+        public void UpdateLocker(int LockerPurposeID, int LockerTypeID ,DateTime DateOpened, string LockerContain ,string LockerDiscription ,int Rent , int PersonID)
+        {
+
+            db.insertUpdateDelete("UpdateLocker  '" + LockerPurposeID + "' '" + LockerTypeID+ "' '"+DateOpened+"' '"+LockerContain+"' '"+LockerDiscription+"' '"+Rent+"' '"+PersonID+"'");
+        }
+
+        public void DeleteLocker(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteLocker " + id);
+        }
+    }
+
+
+
+
 
     class LockerPossesion {
  DatabaseHelper db = new DatabaseHelper();
