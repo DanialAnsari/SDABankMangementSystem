@@ -208,7 +208,59 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+    public DataTable SelectRecordswithDesignation(string Desig)
+        {
+
+            dt = db.Select("SelectEmployeeWithDesignation '" + Desig + "'");
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectEmployeeWithID " + id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectEmployeeWithID " + id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithPay(int pay)
+        {
+
+            dt = db.Select("SelectEmployeeWithPay " +pay);
+
+            return dt;
+
+        }
+
+ public void InsertEmployee( int SalaryID , string Designation ,string Status , string PayRate )
+        {
+
+            db.insertUpdateDelete("InsertEmployee '" + SalaryID + "' '" +Designation + "' '"+Status+"' '"+PayRate+"' ");
+        }
+
+        public void UpdateEmployee(int SalaryID , string Designation ,string Status , string PayRate)
+        {
+
+            db.insertUpdateDelete("UpdateEmployee '" + SalaryID + "' '" +Designation + "' '"+Status+"' '"+PayRate+"' " );
+        }
+
+        public void DeleteEmployee(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteEmployee " + id);
+        }
+    }
+
 
     class Loan {
  DatabaseHelper db = new DatabaseHelper();
