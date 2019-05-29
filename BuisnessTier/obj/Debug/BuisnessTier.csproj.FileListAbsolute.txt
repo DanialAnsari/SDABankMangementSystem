@@ -7,3 +7,12 @@ C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.
 C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\DataAccessTier.dll
 C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\bin\Debug\DataAccessTier.pdb
 C:\Users\dania\source\repos\BMSPresentation\BuisnessTier\obj\Debug\BuisnessTier.csproj.CopyComplete
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\bin\Debug\BuisnessTier.dll
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\bin\Debug\BuisnessTier.pdb
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\bin\Debug\DataAccessTier.dll
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\bin\Debug\DataAccessTier.pdb
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\obj\Debug\BuisnessTier.csprojResolveAssemblyReference.cache
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\obj\Debug\BuisnessTier.csproj.CoreCompileInputs.cache
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\obj\Debug\BuisnessTier.csproj.CopyComplete
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\obj\Debug\BuisnessTier.dll
+C:\Users\hp pc\source\repos\SDABankMangementSystem\BuisnessTier\obj\Debug\BuisnessTier.pdb
