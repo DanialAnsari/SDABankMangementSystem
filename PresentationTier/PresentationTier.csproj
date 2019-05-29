@@ -70,6 +70,12 @@
     <Compile Include="AddClient.Designer.cs">
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTransaction.Designer.cs">
+      <DependentUpon>AddTransaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTransaction.resx">
+      <DependentUpon>AddTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteAccount.resx">
       <DependentUpon>DeleteAccount.cs</DependentUpon>
@@ -180,6 +189,7 @@
     <Content Include="Images\icons8-customer-96.png" />
     <Content Include="Images\left-arrow %282%29.png" />
     <Content Include="Images\left-arrow.png" />
+    <Content Include="Images\transaction.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
