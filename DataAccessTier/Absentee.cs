@@ -263,8 +263,37 @@ namespace DataAccessTier
 
             return dt;
 
-        } 
-}
+        }
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLoanTypewithID " +id);
+
+            return dt;
+
+        }
+
+ public void InsertLoanType( string LoanType)
+        {
+
+            db.insertUpdateDelete("InsertLoanType '" + LoanType+ "'  ");
+        }
+
+        public void UpdateLoanType(string LoanType)
+        {
+
+            db.insertUpdateDelete("UpdateLoanType '" + LoanType+ "' " );
+        }
+
+        public void DeleteLoanType(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteLoanType" + id);
+        }
+    }
+
+
+
 
     class Locker {
  DatabaseHelper db = new DatabaseHelper();
