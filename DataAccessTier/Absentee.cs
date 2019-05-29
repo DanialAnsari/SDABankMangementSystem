@@ -222,7 +222,54 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+    
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLoanwithID " + id);
+
+            return dt;
+
+        }
+
+    public DataTable SelectRecordswithPurpose(string purpose)
+        {
+
+            dt = db.Select("SelectLoanwithPurpose  '" + purpose + "'");
+
+            return dt;
+
+        }
+
+
+        public DataTable SelectRecordswithstatus(int status)
+        {
+
+            dt = db.Select("SelectLoanwithStatus '"+status+"' " );
+
+            return dt;
+
+        }
+
+ public void InsertLoan( string Status , int LoanInstallmentID , int LoanTypeID , int LoanPurposeID)
+        {
+
+            db.insertUpdateDelete("InsertLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurpose+"' ");
+        }
+
+        public void UpdateLoan( string Status , int LoanInstallmentID , int LoanTypeID , int LoanPurposeID)
+        {
+
+            db.insertUpdateDelete("UpdateLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurpose+"' ");
+        }
+
+        public void DeleteLoan(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteLoan" + id);
+        }
+    }
+
 
     class LoanInstallment {
  DatabaseHelper db = new DatabaseHelper();
