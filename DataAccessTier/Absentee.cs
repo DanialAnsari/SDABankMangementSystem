@@ -250,7 +250,35 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLoanPurposewithID " +id);
+
+            return dt;
+
+        }
+
+ public void InsertLoanPurpose( string LoanPurpose)
+        {
+
+            db.insertUpdateDelete("InsertLoanPurpose '" + LoanPurpose+ "'  ");
+        }
+
+        public void UpdateLoanPurpose(string LoanPurpose)
+        {
+
+            db.insertUpdateDelete("UpdateLoanPurpose '" + LoanPurpose+ "' " );
+        }
+
+        public void DeleteLoanPurpose(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete(" DeleteLoanPurpose " + id);
+        }
+    }
+
+
 
     class LoanType {
  DatabaseHelper db = new DatabaseHelper();
