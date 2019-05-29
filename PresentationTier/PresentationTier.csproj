@@ -111,5 +111,12 @@
       <Name>DataAccessTier</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\camera.png" />
+    <Content Include="Images\icons8-customer-96.png" />
+    <Content Include="Images\left-arrow %282%29.png" />
+    <Content Include="Images\left-arrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

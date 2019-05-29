@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddClient));
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.sFirstName = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -75,8 +76,10 @@
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.errorLabel = new System.Windows.Forms.Label();
             this.picCustomer = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel7
@@ -728,17 +731,33 @@
             // 
             // picCustomer
             // 
+            this.picCustomer.BackColor = System.Drawing.Color.White;
+            this.picCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCustomer.Image = ((System.Drawing.Image)(resources.GetObject("picCustomer.Image")));
             this.picCustomer.Location = new System.Drawing.Point(599, 86);
             this.picCustomer.Name = "picCustomer";
-            this.picCustomer.Size = new System.Drawing.Size(161, 142);
+            this.picCustomer.Size = new System.Drawing.Size(161, 160);
+            this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picCustomer.TabIndex = 105;
             this.picCustomer.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(700, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 106;
+            this.pictureBox1.TabStop = false;
             // 
             // AddClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 610);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picCustomer);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.materialDivider1);
@@ -792,6 +811,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -846,5 +866,6 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.PictureBox picCustomer;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
