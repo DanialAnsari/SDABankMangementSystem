@@ -7,3 +7,5 @@ C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\Data
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\DataAccessTier.csproj.CoreCompileInputs.cache
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\DataAccessTier.dll
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\DataAccessTier.pdb
+C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\bin\Debug\DataAccessTier.dll
+C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\bin\Debug\DataAccessTier.pdb
