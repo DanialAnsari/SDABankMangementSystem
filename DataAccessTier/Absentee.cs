@@ -306,7 +306,35 @@ namespace DataAccessTier
             return dt;
 
         }
-}
+            public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLockerTypewithDate " +id);
+
+            return dt;
+
+        }
+         public void InsertLockerPurpose( string LockerType, int LockerPrice)
+        {
+
+            db.insertUpdateDelete("InsertLockerPurpose '" + LockerType+ "' '"+LockerPrice+"'  ");
+        }
+
+        public void UpdateLockerType( string LockerType, int LockerPrice)
+        {
+
+            db.insertUpdateDelete("UpdateLockerType'" + LockerType+ "' '"+LockerPrice+"'  ");
+        }
+
+        public void DeleteLockerType(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteLockerPurpose" + id);
+        }
+    }
+
+
+
 
     class MoneyTransfer {
  DatabaseHelper db = new DatabaseHelper();
