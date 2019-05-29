@@ -705,6 +705,7 @@
             this.materialRaisedButton1.TabIndex = 102;
             this.materialRaisedButton1.Text = "Add";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialDivider1
             // 
@@ -728,6 +729,7 @@
             this.errorLabel.TabIndex = 104;
             this.errorLabel.Text = "#";
             this.errorLabel.Visible = false;
+            this.errorLabel.Click += new System.EventHandler(this.errorLabel_Click);
             // 
             // picCustomer
             // 
@@ -808,6 +810,7 @@
             this.Name = "AddClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Customer";
+            this.Load += new System.EventHandler(this.AddClient_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
