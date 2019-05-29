@@ -177,13 +177,13 @@ namespace DataAccessTier
  public void InsertBankTransaction( DateTime TranscationDateTime,int Amount, string TransactionType, int AccountID,string TransactionDescription,string status)
         {
 
-            db.insertUpdateDelete("InsertBankTransaction '" + TransactionDateTime + "' '" + Amount + "''"+TransactionType+"' '"+AccounID+"' '"+TransactionDescription+"' '"+Status+"' ");
+            db.insertUpdateDelete("InsertBankTransaction '" + TranscationDateTime + "' '" + Amount + "''"+TransactionType+"' '"+ AccountID + "' '"+TransactionDescription+"' '"+ status + "' ");
         }
 
         public void UpdateBankTransaction( DateTime TranscationDateTime,int Amount, string TransactionType, int AccountID,string TransactionDescription,string status)
         {
 
-            db.insertUpdateDelete("UpdateBankTransaction '" + TransactionDateTime + "' '" + Amount + "''"+TransactionType+"' '"+AccounID+"' '"+TransactionDescription+"' '"+Status+"' ");
+            db.insertUpdateDelete("UpdateBankTransaction '" + TranscationDateTime + "' '" + Amount + "''"+TransactionType+"' '"+ AccountID + "' '"+TransactionDescription+"' '"+ status + "' ");
         }
 
         public void DeleteBankTransaction(int id)
@@ -316,14 +316,7 @@ namespace DataAccessTier
             return dt;
 
         }
-        public DataTable SelectRecordswithID(int id)
-        {
-
-            dt = db.Select("SelectEmployeeWithID " + id);
-
-            return dt;
-
-        }
+     
         public DataTable SelectRecordswithPay(int pay)
         {
 
@@ -397,13 +390,13 @@ namespace DataAccessTier
  public void InsertLoan( string Status , int LoanInstallmentID , int LoanTypeID , int LoanPurposeID)
         {
 
-            db.insertUpdateDelete("InsertLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurpose+"' ");
+            db.insertUpdateDelete("InsertLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurposeID+"' ");
         }
 
         public void UpdateLoan( string Status , int LoanInstallmentID , int LoanTypeID , int LoanPurposeID)
         {
 
-            db.insertUpdateDelete("UpdateLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurpose+"' ");
+            db.insertUpdateDelete("UpdateLoan '" + Status + "' '" + LoanInstallmentID + "' '"+LoanTypeID+"' '"+LoanPurposeID+"' ");
         }
 
         public void DeleteLoan(int id)
