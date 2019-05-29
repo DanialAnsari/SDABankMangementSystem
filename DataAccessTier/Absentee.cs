@@ -292,7 +292,44 @@ namespace DataAccessTier
             return dt;
 
         } 
-}
+            public DataTable SelectRecordswithDate(int id)
+        {
+
+            dt = db.Select("SelectLockerPossessionwithDate " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectLoanTypewithID " +id);
+
+            return dt;
+
+        }
+
+ public void InsertLockerPossessionRetrieval( int LockerID ,DateTime RetrievalDateTime ,string LockerDescription)
+        {
+
+            db.insertUpdateDelete("InsertLockerPossessionRetrieval '" + LockerID+ "' '"+RetrievalDateTime+"' '"+LockerDescription+"'  ");
+        }
+
+        public void UpdateLockerPossessionRetrieval(int LockerID ,DateTime RetrievalDateTime ,string LockerDescription)
+        {
+
+            db.insertUpdateDelete("UpdateLockerPossessionRetrieval'" + LockerID+ "' '"+RetrievalDateTime+"' '"+LockerDescription+"'  ");
+        }
+
+        public void DeleteLockerPossessionRetrieval(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteLockerPossessionRetrieval" + id);
+        }
+    }
+
+
+
 
     class LockerPurpose { 
  DatabaseHelper db = new DatabaseHelper();
