@@ -9,3 +9,9 @@ C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\Data
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\obj\Debug\DataAccessTier.pdb
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\bin\Debug\DataAccessTier.dll
 C:\Users\hp pc\source\repos\SDABankMangementSystem\DataAccessTier\bin\Debug\DataAccessTier.pdb
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\bin\Debug\DataAccessTier.dll
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\bin\Debug\DataAccessTier.pdb
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\obj\Debug\DataAccessTier.csprojAssemblyReference.cache
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\obj\Debug\DataAccessTier.csproj.CoreCompileInputs.cache
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\obj\Debug\DataAccessTier.dll
+C:\Users\dania\Desktop\Course Folder\2nd Half\Software Design\proj\DataAccessTier\obj\Debug\DataAccessTier.pdb

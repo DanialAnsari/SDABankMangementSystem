@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BuisnessTier;
+using DataAccessTier;
 namespace PresentationTier
 {
     public partial class AddClient : MaterialSkin.Controls.MaterialForm
@@ -23,6 +24,41 @@ namespace PresentationTier
             
         }
 
-      
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+
+            string fname = sFirstName.Text;
+            string lname = sLastName.Text;
+            string CNIC = txtCNIC.Text;
+            string add = txtAddress.Text;
+            string city = cmdCity.Text;
+            string gender = cmbGender.Text;
+            string dateofbirth = dateOfBirth.Value.ToString();
+            string religion = cmbReligion.Text;
+            string martial = cmbMarritalStatus.Text;
+            string education = cmbEducation.Text;
+            string email = txtEmail.Text;
+            
+            DataAccessTier.Person dp = new DataAccessTier.Person();
+            dp.InsertPerson(fname,lname,CNIC,add,city,gender,dateofbirth,religion,education,martial,email);
+
+            if (cmbIncomeType.Text != "") {
+                DataTable dt = new DataTable();
+
+                dt = dp.SelectRecords();
+                int id = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0]);
+                string income = cmbIncomeType.Text;
+                string occupation = txtOccupation.Text;
+                string org = txtOrganization.Text;
+                string design = txtDesignation.Text;
+
+                DataAccessTier.Customer cp = new Customer();
+                cp.InsertCustomer(id,income,occupation,org,design);
+            }
+
+
+            MessageBox.Show("Sucess");
+
+        }
     }
 }

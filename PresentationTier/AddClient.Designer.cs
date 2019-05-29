@@ -61,12 +61,6 @@
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.txtOrganization = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtOrgAddress = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.cmdOrgPhoneFirst = new MetroFramework.Controls.MetroComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtOrgPhoneLast = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.txtOccupation = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
@@ -74,9 +68,7 @@
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.errorLabel = new System.Windows.Forms.Label();
-            this.picCustomer = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel7
@@ -198,12 +190,14 @@
             this.cmdCity.FormattingEnabled = true;
             this.cmdCity.ItemHeight = 23;
             this.cmdCity.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Karachi",
+            "Lahore",
+            "Islamabad",
+            "Rawalpindi",
+            "Faisalabad",
+            "Hyderabad",
+            "Peshawar",
+            "Quetta"});
             this.cmdCity.Location = new System.Drawing.Point(164, 266);
             this.cmdCity.Name = "cmdCity";
             this.cmdCity.Size = new System.Drawing.Size(216, 29);
@@ -309,12 +303,11 @@
             this.cmbReligion.FormattingEnabled = true;
             this.cmbReligion.ItemHeight = 23;
             this.cmbReligion.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Islam",
+            "Hinduism",
+            "Christainity",
+            "Parsi",
+            "Sikh"});
             this.cmbReligion.Location = new System.Drawing.Point(544, 302);
             this.cmbReligion.Name = "cmbReligion";
             this.cmbReligion.Size = new System.Drawing.Size(216, 29);
@@ -326,12 +319,8 @@
             this.cmbGender.FormattingEnabled = true;
             this.cmbGender.ItemHeight = 23;
             this.cmbGender.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Male",
+            "Female"});
             this.cmbGender.Location = new System.Drawing.Point(544, 267);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(216, 29);
@@ -414,12 +403,8 @@
             this.cmbMarritalStatus.FormattingEnabled = true;
             this.cmbMarritalStatus.ItemHeight = 23;
             this.cmbMarritalStatus.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Single",
+            "Married"});
             this.cmbMarritalStatus.Location = new System.Drawing.Point(164, 336);
             this.cmbMarritalStatus.Name = "cmbMarritalStatus";
             this.cmbMarritalStatus.Size = new System.Drawing.Size(216, 29);
@@ -431,12 +416,12 @@
             this.cmbEducation.FormattingEnabled = true;
             this.cmbEducation.ItemHeight = 23;
             this.cmbEducation.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Metric Pass",
+            "Inter ",
+            "Undergraduate",
+            "Bachelors",
+            "Masters",
+            "PHD"});
             this.cmbEducation.Location = new System.Drawing.Point(544, 337);
             this.cmbEducation.Name = "cmbEducation";
             this.cmbEducation.Size = new System.Drawing.Size(216, 29);
@@ -493,12 +478,8 @@
             this.cmbIncomeType.FormattingEnabled = true;
             this.cmbIncomeType.ItemHeight = 23;
             this.cmbIncomeType.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
+            "Monthy",
+            "Weekly"});
             this.cmbIncomeType.Location = new System.Drawing.Point(166, 426);
             this.cmbIncomeType.Name = "cmbIncomeType";
             this.cmbIncomeType.Size = new System.Drawing.Size(216, 29);
@@ -547,91 +528,6 @@
             this.txtOrganization.Size = new System.Drawing.Size(216, 23);
             this.txtOrganization.TabIndex = 89;
             this.txtOrganization.UseSystemPasswordChar = false;
-            // 
-            // txtOrgAddress
-            // 
-            this.txtOrgAddress.Depth = 0;
-            this.txtOrgAddress.Hint = "";
-            this.txtOrgAddress.Location = new System.Drawing.Point(166, 524);
-            this.txtOrgAddress.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtOrgAddress.Name = "txtOrgAddress";
-            this.txtOrgAddress.PasswordChar = '\0';
-            this.txtOrgAddress.SelectedText = "";
-            this.txtOrgAddress.SelectionLength = 0;
-            this.txtOrgAddress.SelectionStart = 0;
-            this.txtOrgAddress.Size = new System.Drawing.Size(214, 23);
-            this.txtOrgAddress.TabIndex = 92;
-            this.txtOrgAddress.UseSystemPasswordChar = false;
-            // 
-            // materialLabel14
-            // 
-            this.materialLabel14.AutoSize = true;
-            this.materialLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel14.Location = new System.Drawing.Point(24, 524);
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            this.materialLabel14.Size = new System.Drawing.Size(68, 19);
-            this.materialLabel14.TabIndex = 91;
-            this.materialLabel14.Text = "Address:";
-            // 
-            // cmdOrgPhoneFirst
-            // 
-            this.cmdOrgPhoneFirst.FormattingEnabled = true;
-            this.cmdOrgPhoneFirst.ItemHeight = 23;
-            this.cmdOrgPhoneFirst.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
-            this.cmdOrgPhoneFirst.Location = new System.Drawing.Point(166, 488);
-            this.cmdOrgPhoneFirst.Name = "cmdOrgPhoneFirst";
-            this.cmdOrgPhoneFirst.Size = new System.Drawing.Size(51, 29);
-            this.cmdOrgPhoneFirst.TabIndex = 96;
-            this.cmdOrgPhoneFirst.UseSelectable = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(223, 489);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 95;
-            this.label3.Text = "_";
-            // 
-            // txtOrgPhoneLast
-            // 
-            this.txtOrgPhoneLast.Depth = 0;
-            this.txtOrgPhoneLast.Hint = "";
-            this.txtOrgPhoneLast.Location = new System.Drawing.Point(242, 490);
-            this.txtOrgPhoneLast.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtOrgPhoneLast.Name = "txtOrgPhoneLast";
-            this.txtOrgPhoneLast.PasswordChar = '\0';
-            this.txtOrgPhoneLast.SelectedText = "";
-            this.txtOrgPhoneLast.SelectionLength = 0;
-            this.txtOrgPhoneLast.SelectionStart = 0;
-            this.txtOrgPhoneLast.Size = new System.Drawing.Size(140, 23);
-            this.txtOrgPhoneLast.TabIndex = 94;
-            this.txtOrgPhoneLast.UseSystemPasswordChar = false;
-            // 
-            // materialLabel15
-            // 
-            this.materialLabel15.AutoSize = true;
-            this.materialLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel15.Location = new System.Drawing.Point(24, 493);
-            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel15.Name = "materialLabel15";
-            this.materialLabel15.Size = new System.Drawing.Size(55, 19);
-            this.materialLabel15.TabIndex = 93;
-            this.materialLabel15.Text = "Phone:";
             // 
             // materialLabel16
             // 
@@ -702,6 +598,7 @@
             this.materialRaisedButton1.TabIndex = 102;
             this.materialRaisedButton1.Text = "Add";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialDivider1
             // 
@@ -726,20 +623,11 @@
             this.errorLabel.Text = "#";
             this.errorLabel.Visible = false;
             // 
-            // picCustomer
-            // 
-            this.picCustomer.Location = new System.Drawing.Point(599, 86);
-            this.picCustomer.Name = "picCustomer";
-            this.picCustomer.Size = new System.Drawing.Size(161, 142);
-            this.picCustomer.TabIndex = 105;
-            this.picCustomer.TabStop = false;
-            // 
             // AddClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 610);
-            this.Controls.Add(this.picCustomer);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.materialRaisedButton1);
@@ -747,12 +635,6 @@
             this.Controls.Add(this.txtDesignation);
             this.Controls.Add(this.materialLabel16);
             this.Controls.Add(this.txtOccupation);
-            this.Controls.Add(this.cmdOrgPhoneFirst);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtOrgPhoneLast);
-            this.Controls.Add(this.materialLabel15);
-            this.Controls.Add(this.txtOrgAddress);
-            this.Controls.Add(this.materialLabel14);
             this.Controls.Add(this.materialLabel13);
             this.Controls.Add(this.txtOrganization);
             this.Controls.Add(this.cmbIncomeType);
@@ -791,7 +673,6 @@
             this.Text = "Add Customer";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -832,12 +713,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtOrganization;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtOrgAddress;
-        private MaterialSkin.Controls.MaterialLabel materialLabel14;
-        private MetroFramework.Controls.MetroComboBox cmdOrgPhoneFirst;
-        private System.Windows.Forms.Label label3;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtOrgPhoneLast;
-        private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtOccupation;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
@@ -845,6 +720,5 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private System.Windows.Forms.Label errorLabel;
-        private System.Windows.Forms.PictureBox picCustomer;
     }
 }
