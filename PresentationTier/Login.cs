@@ -16,7 +16,6 @@ namespace PresentationTier
         public Login()
         {
             InitializeComponent();
-            InitializeComponent();
             MaterialSkin.MaterialSkinManager skinmanager = MaterialSkin.MaterialSkinManager.Instance;
             skinmanager.AddFormToManage(this);
             skinmanager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
