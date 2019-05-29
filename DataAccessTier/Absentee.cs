@@ -138,7 +138,61 @@ namespace DataAccessTier
             return dt;
 
         }
-}
+    public DataTable SelectRecordswithName(string name)
+        {
+
+            dt = db.Select("SelectAbsenteeNameFromID  '" + name + "'");
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithAccountID(int id)
+        {
+
+            dt = db.Select("SelectTransactionWithAccountID " + id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectTransactionWithID " +id);
+
+            return dt;
+
+        }
+        public DataTable SelectRecordswithType(string type)
+        {
+
+            dt = db.Select("SelectTransactionWithType '" +type+"'");
+
+            return dt;
+
+        }
+
+
+ public void InsertBankTransaction( DateTime TranscationDateTime,int Amount, string TransactionType, int AccountID,string TransactionDescription,string status)
+        {
+
+            db.insertUpdateDelete("InsertBankTransaction '" + TransactionDateTime + "' '" + Amount + "''"+TransactionType+"' '"+AccounID+"' '"+TransactionDescription+"' '"+Status+"' ");
+        }
+
+        public void UpdateBankTransaction( DateTime TranscationDateTime,int Amount, string TransactionType, int AccountID,string TransactionDescription,string status)
+        {
+
+            db.insertUpdateDelete("UpdateBankTransaction '" + TransactionDateTime + "' '" + Amount + "''"+TransactionType+"' '"+AccounID+"' '"+TransactionDescription+"' '"+Status+"' ");
+        }
+
+        public void DeleteBankTransaction(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteBankTransaction " + id);
+        }
+    }
+
 
     class City {
  DatabaseHelper db = new DatabaseHelper();
