@@ -165,8 +165,44 @@ namespace DataAccessTier
 
             return dt;
 
-        } 
-}
+        }
+    public DataTable SelectRecordswithID(int id)
+        {
+
+            dt = db.Select("SelectCustomerwithID " +id);
+
+            return dt;
+
+        }
+
+        public DataTable SelectRecordswithOrg(string name)
+        {
+
+            dt = db.Select("SelectCustomerwithOrg '"+name+"' ");
+
+            return dt;
+
+        }
+
+       
+ public void InsertCustomer( string IncomeType, string Occupation,string Organization, string Address , string Designation)
+        {
+
+            db.insertUpdateDelete("InsertCustomer '" + IncomeType + "' '" + Occupation + "' '"+Organization+"' '"+Address+"' '"+Designation+"'");
+        }
+
+        public void UpdateCustomer(string IncomeType, string Occupation,string Organization, string Address , string Designation)
+        {
+
+            db.insertUpdateDelete("UpdateCustomer '" + IncomeType + "' '" + Occupation + "' '"+Organization+"' '"+Address+"' '"+Designation+"'" );
+        }
+
+        public void DeleteCustomer(int id)
+        {
+            //This method Deletes person
+            db.insertUpdateDelete("DeleteCustomer " + id);
+        }
+    }
 
     class Desgination {
  DatabaseHelper db = new DatabaseHelper();
@@ -194,6 +230,7 @@ namespace DataAccessTier
             return dt;
 
         } 
+
 }
 
     class Employee {
