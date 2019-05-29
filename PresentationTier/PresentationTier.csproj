@@ -76,6 +76,12 @@
     <Compile Include="DeleteClient.Designer.cs">
       <DependentUpon>DeleteClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAccount.Designer.cs">
+      <DependentUpon>EditAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteClient.resx">
       <DependentUpon>DeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAccount.resx">
+      <DependentUpon>EditAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditClient.resx">
       <DependentUpon>EditClient.cs</DependentUpon>

@@ -253,6 +253,7 @@
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.comboCity);
             this.Controls.Add(this.cmdLoad);
+            this.MaximizeBox = false;
             this.Name = "AddAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Account";
