@@ -1,6 +1,6 @@
 ﻿namespace PresentationTier
 {
-    partial class AddTransaction
+    partial class EditTransaction
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTransaction));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditTransaction));
             this.btnEdit = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+            this.label2 = new System.Windows.Forms.Label();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.cmdTransType = new MetroFramework.Controls.MetroComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
             this.txtFromAcc = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.txtToAcc = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtDesc = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -70,8 +70,8 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Primary = true;
             this.btnEdit.Size = new System.Drawing.Size(100, 38);
-            this.btnEdit.TabIndex = 182;
-            this.btnEdit.Text = "Add";
+            this.btnEdit.TabIndex = 157;
+            this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // materialDivider2
@@ -82,8 +82,19 @@
             this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider2.Name = "materialDivider2";
             this.materialDivider2.Size = new System.Drawing.Size(748, 1);
-            this.materialDivider2.TabIndex = 173;
+            this.materialDivider2.TabIndex = 148;
             this.materialDivider2.Text = "materialDivider2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Normal Transaction";
             // 
             // materialLabel8
             // 
@@ -96,7 +107,7 @@
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(129, 19);
-            this.materialLabel8.TabIndex = 177;
+            this.materialLabel8.TabIndex = 152;
             this.materialLabel8.Text = "Transaction Type:";
             // 
             // cmdTransType
@@ -113,7 +124,7 @@
             this.cmdTransType.Location = new System.Drawing.Point(161, 333);
             this.cmdTransType.Name = "cmdTransType";
             this.cmdTransType.Size = new System.Drawing.Size(216, 29);
-            this.cmdTransType.TabIndex = 176;
+            this.cmdTransType.TabIndex = 151;
             this.cmdTransType.UseSelectable = true;
             // 
             // panel1
@@ -123,18 +134,18 @@
             this.panel1.Location = new System.Drawing.Point(13, 289);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 38);
-            this.panel1.TabIndex = 174;
+            this.panel1.TabIndex = 149;
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Normal Transaction";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Normal Transaction";
             // 
             // errorLabel
             // 
@@ -144,7 +155,7 @@
             this.errorLabel.Location = new System.Drawing.Point(29, 573);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(14, 13);
-            this.errorLabel.TabIndex = 183;
+            this.errorLabel.TabIndex = 158;
             this.errorLabel.Text = "#";
             this.errorLabel.Visible = false;
             // 
@@ -160,7 +171,7 @@
             this.txtFromAcc.SelectionLength = 0;
             this.txtFromAcc.SelectionStart = 0;
             this.txtFromAcc.Size = new System.Drawing.Size(216, 23);
-            this.txtFromAcc.TabIndex = 181;
+            this.txtFromAcc.TabIndex = 156;
             this.txtFromAcc.UseSystemPasswordChar = false;
             // 
             // materialLabel7
@@ -174,7 +185,7 @@
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(104, 19);
-            this.materialLabel7.TabIndex = 180;
+            this.materialLabel7.TabIndex = 155;
             this.materialLabel7.Text = "From Account";
             // 
             // txtToAcc
@@ -189,7 +200,7 @@
             this.txtToAcc.SelectionLength = 0;
             this.txtToAcc.SelectionStart = 0;
             this.txtToAcc.Size = new System.Drawing.Size(216, 23);
-            this.txtToAcc.TabIndex = 179;
+            this.txtToAcc.TabIndex = 154;
             this.txtToAcc.UseSystemPasswordChar = false;
             // 
             // materialLabel6
@@ -203,7 +214,7 @@
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(91, 19);
-            this.materialLabel6.TabIndex = 178;
+            this.materialLabel6.TabIndex = 153;
             this.materialLabel6.Text = "To Account:";
             // 
             // panel2
@@ -213,18 +224,7 @@
             this.panel2.Location = new System.Drawing.Point(13, 388);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(750, 38);
-            this.panel2.TabIndex = 175;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Normal Transaction";
+            this.panel2.TabIndex = 150;
             // 
             // txtDesc
             // 
@@ -238,7 +238,7 @@
             this.txtDesc.SelectionLength = 0;
             this.txtDesc.SelectionStart = 0;
             this.txtDesc.Size = new System.Drawing.Size(216, 23);
-            this.txtDesc.TabIndex = 172;
+            this.txtDesc.TabIndex = 147;
             this.txtDesc.UseSystemPasswordChar = false;
             // 
             // materialLabel5
@@ -252,7 +252,7 @@
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(90, 19);
-            this.materialLabel5.TabIndex = 171;
+            this.materialLabel5.TabIndex = 146;
             this.materialLabel5.Text = "Description:";
             // 
             // materialLabel2
@@ -266,7 +266,7 @@
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(106, 19);
-            this.materialLabel2.TabIndex = 170;
+            this.materialLabel2.TabIndex = 145;
             this.materialLabel2.Text = "Load Account:";
             // 
             // metroComboBox2
@@ -283,7 +283,7 @@
             this.metroComboBox2.Location = new System.Drawing.Point(153, 298);
             this.metroComboBox2.Name = "metroComboBox2";
             this.metroComboBox2.Size = new System.Drawing.Size(216, 29);
-            this.metroComboBox2.TabIndex = 169;
+            this.metroComboBox2.TabIndex = 144;
             this.metroComboBox2.UseSelectable = true;
             // 
             // materialLabel1
@@ -297,7 +297,7 @@
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(135, 19);
-            this.materialLabel1.TabIndex = 168;
+            this.materialLabel1.TabIndex = 143;
             this.materialLabel1.Text = "Transaction Mode:";
             // 
             // cmdMode
@@ -314,7 +314,7 @@
             this.cmdMode.Location = new System.Drawing.Point(153, 154);
             this.cmdMode.Name = "cmdMode";
             this.cmdMode.Size = new System.Drawing.Size(216, 29);
-            this.cmdMode.TabIndex = 167;
+            this.cmdMode.TabIndex = 142;
             this.cmdMode.UseSelectable = true;
             // 
             // txtAmm
@@ -329,7 +329,7 @@
             this.txtAmm.SelectionLength = 0;
             this.txtAmm.SelectionStart = 0;
             this.txtAmm.Size = new System.Drawing.Size(216, 23);
-            this.txtAmm.TabIndex = 166;
+            this.txtAmm.TabIndex = 141;
             this.txtAmm.UseSystemPasswordChar = false;
             // 
             // materialLabel3
@@ -343,7 +343,7 @@
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(66, 19);
-            this.materialLabel3.TabIndex = 165;
+            this.materialLabel3.TabIndex = 140;
             this.materialLabel3.Text = "Amount:";
             // 
             // materialLabel4
@@ -357,7 +357,7 @@
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(128, 19);
-            this.materialLabel4.TabIndex = 164;
+            this.materialLabel4.TabIndex = 139;
             this.materialLabel4.Text = "Transaction Date:";
             // 
             // dateTrans
@@ -366,7 +366,7 @@
             this.dateTrans.MinimumSize = new System.Drawing.Size(0, 29);
             this.dateTrans.Name = "dateTrans";
             this.dateTrans.Size = new System.Drawing.Size(216, 29);
-            this.dateTrans.TabIndex = 163;
+            this.dateTrans.TabIndex = 138;
             // 
             // pictureBox1
             // 
@@ -376,7 +376,7 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 162;
+            this.pictureBox1.TabIndex = 137;
             this.pictureBox1.TabStop = false;
             // 
             // picCustomer
@@ -388,7 +388,7 @@
             this.picCustomer.Name = "picCustomer";
             this.picCustomer.Size = new System.Drawing.Size(161, 160);
             this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCustomer.TabIndex = 161;
+            this.picCustomer.TabIndex = 136;
             this.picCustomer.TabStop = false;
             // 
             // comboCity
@@ -402,7 +402,7 @@
             this.comboCity.MouseState = MaterialSkin.MouseState.HOVER;
             this.comboCity.Name = "comboCity";
             this.comboCity.Size = new System.Drawing.Size(106, 19);
-            this.comboCity.TabIndex = 160;
+            this.comboCity.TabIndex = 135;
             this.comboCity.Text = "Load Account:";
             // 
             // cmdLoad
@@ -419,10 +419,10 @@
             this.cmdLoad.Location = new System.Drawing.Point(153, 84);
             this.cmdLoad.Name = "cmdLoad";
             this.cmdLoad.Size = new System.Drawing.Size(216, 29);
-            this.cmdLoad.TabIndex = 159;
+            this.cmdLoad.TabIndex = 134;
             this.cmdLoad.UseSelectable = true;
             // 
-            // AddTransaction
+            // EditTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -453,10 +453,9 @@
             this.Controls.Add(this.comboCity);
             this.Controls.Add(this.cmdLoad);
             this.MaximizeBox = false;
-            this.Name = "AddTransaction";
+            this.Name = "EditTransaction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add Transaction";
-            this.Load += new System.EventHandler(this.AddTransaction_Load);
+            this.Text = "Edit Transaction";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -472,17 +471,17 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnEdit;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
+        private System.Windows.Forms.Label label2;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MetroFramework.Controls.MetroComboBox cmdTransType;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label errorLabel;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtFromAcc;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtToAcc;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDesc;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
