@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PresentationTier
 {
-    public partial class ViewTransaction : MaterialSkin.Controls.MaterialForm
+    public partial class DeleteTransaction : MaterialSkin.Controls.MaterialForm
     {
-        public ViewTransaction()
+        public DeleteTransaction()
         {
             InitializeComponent();
             MaterialSkin.MaterialSkinManager skinmanager = MaterialSkin.MaterialSkinManager.Instance;
@@ -22,7 +22,7 @@ namespace PresentationTier
 
         }
 
-        private void ViewTransaction_Load(object sender, EventArgs e)
+        private void DeleteTransaction_Load(object sender, EventArgs e)
         {
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
