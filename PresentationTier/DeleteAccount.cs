@@ -21,6 +21,27 @@ namespace PresentationTier
             skinmanager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
             skinmanager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green900, MaterialSkin.Primary.BlueGrey900, MaterialSkin.Primary.Green500, MaterialSkin.Accent.Orange700, MaterialSkin.TextShade.WHITE);
 
+
+
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DeleteAccount_Load(object sender, EventArgs e)
+        {
+           
+
+            DataAccessTier.Account dp = new DataAccessTier.Account();
+            DataTable dt = new DataTable();
+            dt = dp.SelectRecords();
+
+            dataGridView1.DataSource = dt;
+
+
         }
     }
 }

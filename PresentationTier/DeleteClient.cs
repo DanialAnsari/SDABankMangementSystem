@@ -35,6 +35,33 @@ namespace PresentationTier
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 205, 50);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            DataAccessTier.Person dp = new DataAccessTier.Person();
+            DataTable dt = new DataTable();
+            dt = dp.SelectRecords();
+
+            dataGridView1.DataSource = dt;
+        }
+
+        private void btnDelte_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value);
+
+            DataAccessTier.Person dp = new DataAccessTier.Person();
+
+            dp.DeletePerson(id);
+
+            
+                DataAccessTier.Customer cp = new DataAccessTier.Customer();
+                cp.DeleteCustomer(id);
+
+            MessageBox.Show("Delete Sucessful");
+
+            DataTable dt = new DataTable();
+            dt = dp.SelectRecords();
+
+            dataGridView1.DataSource = dt;
+
         }
     }
 }

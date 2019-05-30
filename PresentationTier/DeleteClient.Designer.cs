@@ -52,7 +52,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 79);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(754, 480);
+            this.dataGridView1.Size = new System.Drawing.Size(1014, 480);
             this.dataGridView1.TabIndex = 108;
             // 
             // btnDelte
@@ -66,12 +66,13 @@
             this.btnDelte.TabIndex = 110;
             this.btnDelte.Text = "Delete";
             this.btnDelte.UseVisualStyleBackColor = true;
+            this.btnDelte.Click += new System.EventHandler(this.btnDelte_Click);
             // 
             // DeleteClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 610);
+            this.ClientSize = new System.Drawing.Size(1038, 610);
             this.Controls.Add(this.btnDelte);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);

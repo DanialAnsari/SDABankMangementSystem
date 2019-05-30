@@ -36,6 +36,12 @@ namespace PresentationTier
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 205, 50);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            DataAccessTier.Person dp = new DataAccessTier.Person();
+            DataTable dt = new DataTable();
+            dt = dp.SelectRecords();
+
+            dataGridView1.DataSource = dt;
         }
     }
 }

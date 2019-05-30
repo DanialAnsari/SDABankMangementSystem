@@ -46,10 +46,10 @@ namespace DataAccessTier
                 db.insertUpdateDelete("InsertCustomer "+id+",'" + IncomeType + "','" + Occupation + "','" + Organization + "','"  + Designation + "'");
             }
 
-            public void UpdateCustomer(string IncomeType, string Occupation, string Organization, string Address, string Designation)
+            public void UpdateCustomer(int id,string IncomeType, string Occupation, string Organization, string Designation)
             {
 
-                db.insertUpdateDelete("UpdateCustomer '" + IncomeType + "' '" + Occupation + "' '" + Organization + "' '" + Address + "' '" + Designation + "'");
+                db.insertUpdateDelete("UpdateCustomer "+id+",'" + IncomeType + "','" + Occupation + "','" + Organization +  "','" + Designation + "'");
             }
 
             public void DeleteCustomer(int id)

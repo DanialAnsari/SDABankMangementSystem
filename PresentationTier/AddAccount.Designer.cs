@@ -40,11 +40,9 @@
             this.dateOpened = new MetroFramework.Controls.MetroDateTime();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picCustomer = new System.Windows.Forms.PictureBox();
             this.errorLabel = new System.Windows.Forms.Label();
             this.btnAdd = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // comboCity
@@ -65,13 +63,6 @@
             // 
             this.cmdLoad.FormattingEnabled = true;
             this.cmdLoad.ItemHeight = 23;
-            this.cmdLoad.Items.AddRange(new object[] {
-            "021",
-            "044",
-            "081",
-            "042",
-            "022",
-            "087"});
             this.cmdLoad.Location = new System.Drawing.Point(154, 85);
             this.cmdLoad.Name = "cmdLoad";
             this.cmdLoad.Size = new System.Drawing.Size(216, 29);
@@ -180,7 +171,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(12, 207);
+            this.materialLabel4.Location = new System.Drawing.Point(12, 217);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(98, 19);
@@ -198,18 +189,6 @@
             this.pictureBox1.TabIndex = 110;
             this.pictureBox1.TabStop = false;
             // 
-            // picCustomer
-            // 
-            this.picCustomer.BackColor = System.Drawing.Color.White;
-            this.picCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picCustomer.Image = ((System.Drawing.Image)(resources.GetObject("picCustomer.Image")));
-            this.picCustomer.Location = new System.Drawing.Point(605, 85);
-            this.picCustomer.Name = "picCustomer";
-            this.picCustomer.Size = new System.Drawing.Size(161, 160);
-            this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCustomer.TabIndex = 109;
-            this.picCustomer.TabStop = false;
-            // 
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
@@ -225,7 +204,7 @@
             // btnAdd
             // 
             this.btnAdd.Depth = 0;
-            this.btnAdd.Location = new System.Drawing.Point(666, 560);
+            this.btnAdd.Location = new System.Drawing.Point(120, 276);
             this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Primary = true;
@@ -233,16 +212,16 @@
             this.btnAdd.TabIndex = 111;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // AddAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 610);
+            this.ClientSize = new System.Drawing.Size(446, 349);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.picCustomer);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.dateOpened);
             this.Controls.Add(this.txtAccNum);
@@ -257,8 +236,8 @@
             this.Name = "AddAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Account";
+            this.Load += new System.EventHandler(this.AddAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +256,6 @@
         private MetroFramework.Controls.MetroDateTime dateOpened;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox picCustomer;
         private System.Windows.Forms.Label errorLabel;
         private MaterialSkin.Controls.MaterialRaisedButton btnAdd;
     }

@@ -23,6 +23,32 @@ namespace PresentationTier
 
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string num=txtAccNum.Text;
+            string title = txtAccTitle.Text;
+            double balance = Convert.ToDouble(txtCurrBal.Text);
+            string date = dateOpened.Text;
+            int id = Convert.ToInt32(cmdLoad.Text);
 
+            DataAccessTier.Account ac = new DataAccessTier.Account();
+
+            ac.InsertAccount(id, num, title, balance, date);
+
+            MessageBox.Show("Success");
+        }
+
+        private void AddAccount_Load(object sender, EventArgs e)
+        {
+            DataAccessTier.Customer dp = new DataAccessTier.Customer();
+            DataTable dt = new DataTable();
+            dt = dp.SelectRecords();
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cmdLoad.Items.Add(dt.Rows[i][0]);
+
+            }
+        }
     }
 }

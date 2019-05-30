@@ -73,10 +73,10 @@ namespace DataAccessTier
             db.insertUpdateDelete("InsertPerson '" + fn + "','" + ln + "','" + cnic + "','" + address + "','" + cityid + "','" + gender + "','" + birthdate + "','" + religion + "','" + educationID + "','" + martial + "','" + email + "'");
         }
 
-        public void UpdatePerson(string fn, string ln, string cnic, string address, int cityid, string gender, DateTime birthdate, DateTime Dateadd, string religion, string educationID, string martial, string email)
+        public void UpdatePerson(int id,string fn, string ln, string cnic, string address, string cityid, string gender, string birthdate, string religion, string educationID, string martial, string email)
         {
 
-            db.insertUpdateDelete("UpdatePerson '" + fn + "' '" + ln + "' '" + cnic + "' " + address + "' " + cityid + " " + birthdate + "' '" + Dateadd + "' '" + religion + "' '" + educationID + "' '" + martial + "' '" + email + "'");
+            db.insertUpdateDelete("UpdatePerson "+id+",'" + fn + "','" + ln + "','" + cnic + "','" + address + "','" + cityid + "','" + gender + "','" + birthdate + "','" + religion + "','" + educationID + "','" + martial + "','" + email + "'");
         }
 
         public void DeletePerson(int id)
