@@ -128,31 +128,31 @@ namespace BuisnessTier
         }
 
 
-        /////// address------
-        //public static bool IsValidAdress(string address)
-        //{
-        //    if (string.IsNullOrWhiteSpace(address))
-        //        return false;
+        ///// address------
+        public static bool IsValidAdress(string address)
+        {
+            if (string.IsNullOrWhiteSpace(address))
+                return false;
 
-        //    try
-        //    {
-        //        if (!Regex.Match(address.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
+            try
+            {
+                if (!Regex.Match(address.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
 
-        //            return true;
-
-
-        //    }
-        //    catch (RegexMatchTimeoutException)
-        //    {
-        //        MessageBox.Show("Invalid address", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
-        //        address.Focus();
-
-        //        return false;
-        //    }
+                    return true;
 
 
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                MessageBox.Show("Invalid address", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
+                address.Focus();
 
-        //}
+                return false;
+            }
+
+
+
+        }
     }
 
 }
