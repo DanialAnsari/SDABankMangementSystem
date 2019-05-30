@@ -29,6 +29,15 @@ namespace DataAccessTier
 
         }
 
+        public DataTable SelectRecordswithsmallID(int id)
+        {
+
+            dt = db.Select("SelectAccountwithidnum  '" + id + "'");
+
+            return dt;
+
+        }
+
         public DataTable SelectRecordswithPersonID(int id)
         {
 

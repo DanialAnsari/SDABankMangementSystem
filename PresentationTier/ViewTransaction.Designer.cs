@@ -1,6 +1,6 @@
 ﻿namespace PresentationTier
 {
-    partial class DeleteAccount
+    partial class ViewTransaction
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteAccount));
-            this.btnDelte = new MaterialSkin.Controls.MaterialRaisedButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewTransaction));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnDelte
-            // 
-            this.btnDelte.Depth = 0;
-            this.btnDelte.Location = new System.Drawing.Point(349, 471);
-            this.btnDelte.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDelte.Name = "btnDelte";
-            this.btnDelte.Primary = true;
-            this.btnDelte.Size = new System.Drawing.Size(88, 36);
-            this.btnDelte.TabIndex = 113;
-            this.btnDelte.Text = "Delete";
-            this.btnDelte.UseVisualStyleBackColor = true;
-            this.btnDelte.Click += new System.EventHandler(this.btnDelte_Click);
             // 
             // pictureBox1
             // 
@@ -57,30 +43,29 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 112;
+            this.pictureBox1.TabIndex = 111;
             this.pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(711, 362);
-            this.dataGridView1.TabIndex = 114;
+            this.dataGridView1.Size = new System.Drawing.Size(754, 519);
+            this.dataGridView1.TabIndex = 110;
             // 
-            // DeleteAccount
+            // ViewTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 540);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnDelte);
+            this.ClientSize = new System.Drawing.Size(778, 610);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dataGridView1);
             this.MaximizeBox = false;
-            this.Name = "DeleteAccount";
+            this.Name = "ViewTransaction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Delete Account";
-            this.Load += new System.EventHandler(this.DeleteAccount_Load);
+            this.Text = "View Transaction";
+            this.Load += new System.EventHandler(this.ViewTransaction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -89,7 +74,6 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialRaisedButton btnDelte;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
