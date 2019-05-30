@@ -92,14 +92,14 @@ namespace BuisnessTier
 
         ////-- phone-----
 
-        //private static string[] m_Patterns = new string[] { @"^[0-9]{10}$", @"^\+[0-9]{2}\s+[0-9]{2}[0-9]{8}$", @"^[0-9]{3}-[0-9]{4}-[0-9]{4}$", };// for 10 numbers validation
+        private static string[] m_Patterns = new string[] { @"^[0-9]{10}$", @"^\+[0-9]{2}\s+[0-9]{2}[0-9]{8}$", @"^[0-9]{3}-[0-9]{4}-[0-9]{4}$", };// for 10 numbers validation
 
-        //public static object MessageBox { get; private set; }
+        public static object MessageBox { get; private set; }
 
-        //private static string MakeCombinedPattern()
-        //{
-        //    return string.Join("|", m_Patterns.Select(phone => "(" + phone + ")"));
-        //}
+        private static string MakeCombinedPattern()
+        {
+            return string.Join("|", m_Patterns.Select(phone => "(" + phone + ")"));
+        }
 
 
         //public static bool IsValidPhone(string phone)
@@ -155,4 +155,4 @@ namespace BuisnessTier
         //}
     }
 
-    }
+}
