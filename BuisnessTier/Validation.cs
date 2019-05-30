@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BuisnessTier
 {
@@ -62,31 +63,31 @@ namespace BuisnessTier
         //}
 
         ////-------Name-------
-        //public static bool IsValidName(string name)
-        //{
-        //    if (string.IsNullOrWhiteSpace(name))
-        //        return false;
+        public static bool IsValidName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                return false;
 
-        //    try
-        //    {
-        //        if (!Regex.Match(name, "^[A-Z][a-zA-Z]*$").Success)
-        //        {
-
-
-        //            return true;
-        //        }
-
-        //    }
-        //    catch (RegexMatchTimeoutException)
-        //    {
-        //        MessageBox.Show("Invalid first name", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
-        //        name.Focus();
-        //        return false;
-        //    }
+            try
+            {
+                if (!Regex.Match(name, "^[A-Z][a-zA-Z]*$").Success)
+                {
 
 
+                    return true;
+                }
 
-        //}
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                MessageBox.Show("Invalid first name", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
+                name.Focus();
+                return false;
+            }
+
+
+
+        }
 
 
         ////-- phone-----
