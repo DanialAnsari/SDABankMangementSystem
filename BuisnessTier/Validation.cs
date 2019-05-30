@@ -102,30 +102,30 @@ namespace BuisnessTier
         }
 
 
-        //public static bool IsValidPhone(string phone)
-        //{
-        //    if (string.IsNullOrWhiteSpace(phone))
-        //        return false;
+        public static bool IsValidPhone(string phone)
+        {
+            if (string.IsNullOrWhiteSpace(phone))
+                return false;
 
-        //    try
-        //    {
-        //        if (!Regex.Match(phone.Text, @"^[1-9]\d{2}-[1-9]\d{2}-\d{4}$", MakeCombinedPattern()).Success)
-        //        {
+            try
+            {
+                if (!Regex.Match(phone.Text, @"^[1-9]\d{2}-[1-9]\d{2}-\d{4}$", MakeCombinedPattern()).Success)
+                {
 
-        //            return true;
-        //        }
+                    return true;
+                }
 
-        //    }
-        //    catch (RegexMatchTimeoutException)
-        //    {
-        //        MessageBox.Show("Invalid phone number", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
-        //        phone.Focus();
-        //        return false;
-        //    }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                MessageBox.Show("Invalid phone number", "Message", MessageBoxButton.OK, MessageBoxImage.Error);
+                phone.Focus();
+                return false;
+            }
 
 
 
-        //}
+        }
 
 
         /////// address------
